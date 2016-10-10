@@ -29,10 +29,10 @@ class TestFizzBuzz(unittest.TestCase):
         self.assertEqual(fizz_buzz(7), 7, msg='should return the number if its in divisible by neither 3 or 5')
 
     def test_fizz_3(self):
-        self.assertEqual(fizz_buzz(99), 'Fizz', msg='should return the number if its in divisible by neither 3 or 5')
+        self.assertEqual(fizz_buzz(99), 'Fizz', msg='should return `Fizz` for number divisible by 3')
 
     def test_fizz_buzz_3(self):
-        self.assertEqual(fizz_buzz(150), 'FizzBuzz', msg='should return the number if its in divisible by neither 3 or 5')
+        self.assertEqual(fizz_buzz(150), 'FizzBuzz', msg='should return `FizzBuzz` for number divisible by 3 and 5')
 
 
 
