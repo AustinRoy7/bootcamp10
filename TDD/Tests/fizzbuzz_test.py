@@ -3,7 +3,6 @@ import unittest
 from fizzbuzz import fizz_buzz
 
 class TestFizzBuzz(unittest.TestCase):
-    """docstring for FizzBuzz"""
 
     def test_fizz_1(self):
         self.assertEqual(fizz_buzz(3), 'Fizz', msg='should return `Fizz` for number divisible by 3')
@@ -28,6 +27,13 @@ class TestFizzBuzz(unittest.TestCase):
         
     def test_indivisible_2(self):
         self.assertEqual(fizz_buzz(7), 7, msg='should return the number if its in divisible by neither 3 or 5')
+
+    def test_fizz_3(self):
+        self.assertEqual(fizz_buzz(99), 'Fizz', msg='should return the number if its in divisible by neither 3 or 5')
+
+    def test_fizz_buzz_3(self):
+        self.assertEqual(fizz_buzz(150), 'FizzBuzz', msg='should return the number if its in divisible by neither 3 or 5')
+
 
 
 
